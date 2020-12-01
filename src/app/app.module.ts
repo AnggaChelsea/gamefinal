@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+// import { AngularFireModule } from '@angular/fire';
 import { ProductService } from './services/product.service';
 import { UserService } from './services/user.service';
 import { AuthGuard } from './services/auth/auth.guard';
@@ -34,7 +36,16 @@ import { OpengameComponent } from './components/opengame/opengame.component';
 import { TypegamesComponent } from './components/typegames/typegames.component';
 import { DetailgameComponent } from './components/detailgame/detailgame.component';
 import { LurahComponent } from './components/admin/lurah/lurah.component';
-import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
+import { GetdataComponent } from './components/admin/getdata/getdata.component';
+import { SidbarComponent } from './components/admin/sidbar/sidbar.component';
+import { MainComponent } from './components/admin/main/main.component';
+import { IfRolesDirective } from './if-roles.directive';
+import { FreeforallComponent } from './components/typegames/freeforall/freeforall.component';
+import { IndividualsComponent } from './components/typegames/individuals/individuals.component';
+import { TournamentMatchComponent } from './components/board/tournament-match/tournament-match.component';
+import { SoccerComponent } from './components/games/soccer/soccer.component';
+import { ThreeimagebannerComponent } from './components/threeimagebanner/threeimagebanner.component';
+
 
 
 
@@ -60,7 +71,16 @@ import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
     TypegamesComponent,
     DetailgameComponent,
     LurahComponent,
-    PagelurahComponent,
+
+    GetdataComponent,
+    SidbarComponent,
+    MainComponent,
+    IfRolesDirective,
+    FreeforallComponent,
+    IndividualsComponent,
+    TournamentMatchComponent,
+    SoccerComponent,
+    ThreeimagebannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,6 +94,7 @@ import { PagelurahComponent } from './components/pagelurah/pagelurah.component';
     CarouselModule,
     WavesModule,
     ReactiveFormsModule,
+    // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ProductService, AuthGuard, AuthService, UserService],
   bootstrap: [AppComponent]

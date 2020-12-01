@@ -5,7 +5,18 @@
 export const environment = {
   production: false,
   // urlAddress:'https://radiant-bayou-53976.herokuapp.com/',
-  urlAddress:'http://localhost:5000/'
+  urlAddress:'http://localhost:5000/',
+
+  // firebase: {
+  //   apiKey: 'AIzaSyDm9Kmf-F2-hQL5QrwtwI--9LKHz4U64Mo',
+  //   authDomain: '<your-project-authdomain>',
+  //   databaseURL: '<your-database-URL>',
+  //   projectId: '<your-project-id>',
+  //   storageBucket: '<your-storage-bucket>',
+  //   messagingSenderId: '<your-messaging-sender-id>',
+  //   appId: '<your-app-id>',
+  //   measurementId: '<your-measurement-id>'
+  // }
 };
 
 /*

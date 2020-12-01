@@ -7,3 +7,6 @@ mdb-icon{
 app-sidebar{
   position:fixed;
 }
+.sidebar{
+  position:absolute;
+}
